@@ -1,0 +1,48 @@
+@import 'colors';
+
+.home {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.productCard {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $tertiary;
+    margin: 2rem;
+    border-radius: 5px;
+    padding: 2rem;
+    color: $primary;
+    transition: all .3s;
+
+    >img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    >h4 {
+        margin: 1rem;
+    }
+
+    >button {
+        cursor: pointer;
+        background-color: $secondary;
+        padding: .5rem;
+        color: $tertiary;
+        font: 100 1.2rem "Roboto";
+        border: none;
+        border-radius: .7rem;
+        width: 100%;
+        transition: all .5s;
+        &:hover{
+            background-color:$secondarydark;
+        }
+    }
+    &:hover{
+        transform: scale(1.05);
+    }
+}
